@@ -15,8 +15,8 @@ export default function Home({ films }) {
       <section className="films">
 
         {films.results.map((film, index) => (
-          <Link href={`/film/${index +1 }`} passHref>
-            <div key={film.title} className="film">
+          <Link href={`/film/${index +1 }`} passHref  key={film.title} >
+            <div className="film">
               <Image
                 src={`/images/${film.episode_id}.jpg`}
                 alt="Picture of the author"
