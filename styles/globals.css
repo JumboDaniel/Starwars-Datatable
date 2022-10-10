@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: url(https://images.unsplash.com/photo-1558158539-226f4a45f7b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1189&q=80);
+  color: yellow;
 }
 
 a {
@@ -13,6 +15,26 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.films {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.film {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.film h3 {
+  font-size: 24px;
+  font-weight: semibold;
 }
 
 @media (prefers-color-scheme: dark) {
