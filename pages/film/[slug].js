@@ -6,18 +6,26 @@ const Movies = ({ film, jsons }) => {
     {
       name: "Name",
       selector: (row) => row.name,
+      sortable: true,
+
     },
     {
       name: "Gender",
       selector: (row) => row.gender,
+      sortable: true,
+
     },
     {
       name: "HeightCm",
       selector: (row) => row.heightCm,
+      sortable: true,
+
     },
     {
       name: "HeightFt",
-      selector: (row) => row.genderFt,
+      selector: (row) => row.heightFt,
+      sortable: true,
+
     },
   ];
 
@@ -27,11 +35,11 @@ const Movies = ({ film, jsons }) => {
       name: elem.name,
       gender: elem.gender,
       heightCm:`${elem.height}cm`,
-      heightFt: `${elem.height / 30.48}ft`,
+      heightFt: `${Math.round(elem.height / 30.48)}ft`,
     } 
   ))
   
-  console.log(data, jsons)
+  
   return (
     <div>
       <section>
